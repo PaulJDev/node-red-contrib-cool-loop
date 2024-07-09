@@ -10,11 +10,12 @@
     "nodes": {
       "cool-loop-start": "nodes/cool-loop-start.js",
       "cool-loop-join": "nodes/cool-loop-join.js"
-    }
+    },
+    "version": ">=2.0.0"
   },
   "author": "Paul Javaloyes <pauljavaloyesdev@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "node-red-contrib-cool-loop": "^0.0.1"
+  "engines": {
+    "node": ">=12.0.0"
   }
 }
