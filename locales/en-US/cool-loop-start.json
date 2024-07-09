@@ -1,0 +1,6 @@
+{
+    "cool-loop-start": {
+        "name": "Cool Loop Start",
+        "description": "Starts processing an array and sends the elements one by one."
+    }
+}

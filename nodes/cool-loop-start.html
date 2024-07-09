@@ -1,0 +1,31 @@
+<script type="text/javascript">
+    RED.nodes.registerType('cool-loop-start', {
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            name: { value: "" },
+            arrayProperty: { value: "payload" }
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "loop.png",
+        label: function() {
+            return this.name || "cool-loop-start";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="cool-loop-start">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Nombre</label>
+        <input type="text" id="node-input-name" placeholder="Nombre">
+    </div>
+    <div class="form-row">
+        <label for="node-input-arrayProperty"><i class="fa fa-list"></i> Propiedad del Array</label>
+        <input type="text" id="node-input-arrayProperty" placeholder="payload">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="cool-loop-start">
+    <p>Un nodo que inicia el procesamiento de un array y envía los elementos uno por uno.</p>
+</script>

@@ -1,0 +1,30 @@
+<script type="text/javascript">
+    RED.nodes.registerType('cool-loop-join', {
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            name: { value: "" },
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "join.png",
+        label: function() {
+            return this.name || "cool-loop-join";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="cool-loop-join">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Nombre</label>
+        <input type="text" id="node-input-name" placeholder="Nombre">
+    </div>
+    <div class="form-row">
+        <label for="node-input-startNodeId"><i class="fa fa-link"></i> ID del Nodo de Inicio</label>
+        <input type="text" id="node-input-startNodeId" placeholder="ID del nodo cool-loop-start">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="cool-loop-join">
+    <p>Un nodo que recibe elementos procesados y decide si continuar enviando más elementos o finalizar el bucle.</p>
+</script>

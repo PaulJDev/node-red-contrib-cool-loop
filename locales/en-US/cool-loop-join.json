@@ -1,0 +1,6 @@
+{
+    "cool-loop-join": {
+        "name": "Cool Loop Join",
+        "description": "Receives processed elements and decides whether to continue sending more elements or to end the loop."
+    }
+}
